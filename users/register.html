@@ -34,6 +34,8 @@
         var name = $('#name').val();
         var repassword = $('#repassword').val();
         if (password !== repassword) {
+            console.log(password);
+            console.log(repassword);
             $("#warnShow").html('两次密码输入不一致');
         } else {
             $("#warnShow").html('');
