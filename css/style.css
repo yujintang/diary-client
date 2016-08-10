@@ -4,7 +4,7 @@
 }
 body,input,select{
 	font-family: "微软雅黑", "新宋体", "宋体",Arial, Verdana, Helvetica, sans-serif;;
-	font-size:16px;
+	font-size: 1rem;
 	color:#333;
 	background:#FFF;
 	text-align:left;
@@ -68,7 +68,7 @@ img{
 #menu li{
 	list-style-type: none;
 	float: left;
-	margin: 0 1%;
+	margin: 0 3%;
 	line-height: 3.2rem;
 }
 
