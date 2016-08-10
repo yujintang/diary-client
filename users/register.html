@@ -40,7 +40,7 @@
             $.post('../api/users/register', {account: account, password: password}, function (result) {
 
                 if (result && result.ret == 'OK') {
-                    window.location.href = '../api/users';
+                    window.location.href = '../action/home.html';
                 } else {
 
                     $("#warnShow").html(result.msg);
