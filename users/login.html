@@ -32,11 +32,11 @@
     $('#login').click(function () {
         var account = $('#account').val();
         var password = $('#password').val();
-        $.post('api/users/login', {account: account, password: password}, function (result) {
+        $.post('../api/users/login', {account: account, password: password}, function (result) {
             if (result && result.ret == 'OK') {
                 if ($("input[type='checkbox']").is(':checked')) {
                 }
-                window.location.href = 'api/users';
+                window.location.href = '../api/users';
             } else {
                 $("#warnShow").html(result.msg);
             }

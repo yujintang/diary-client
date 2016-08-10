@@ -38,7 +38,7 @@
             $("#warnShow").html('邮箱格式不正确');
         }  else {
             $("#warnShow").html('');
-            $.post('/api/users/sendEmail', {email: email, flag: flag}, function (result) {
+            $.post('../api/users/sendEmail', {email: email, flag: flag}, function (result) {
                 if (result && result.ret == 'OK') {
                     window.location.href = 'index.html';
                 } else {

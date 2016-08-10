@@ -37,10 +37,10 @@
             $("#warnShow").html('两次密码输入不一致');
         } else {
             $("#warnShow").html('');
-            $.post('/api/users/register', {account: account, password: password}, function (result) {
+            $.post('../api/users/register', {account: account, password: password}, function (result) {
 
                 if (result && result.ret == 'OK') {
-                    window.location.href = '/api/users';
+                    window.location.href = '../api/users';
                 } else {
 
                     $("#warnShow").html(result.msg);
